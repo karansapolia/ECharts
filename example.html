@@ -21,7 +21,7 @@
         feature : {
             mark : {show: true},
             dataView : {show: true, readOnly: false},
-            magicType: {show: true, type: ['line', 'bar']},
+            magicType: {show: true, type: ['line', 'bar','pie']},
             restore : {show: true},
             saveAsImage : {show: true}
         }
@@ -61,7 +61,7 @@
         },
         {
             name:'kulfi',
-            type:'line',
+            type:'bar',
             data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
         },
         {
@@ -76,17 +76,7 @@
        title: 'view',
        readOnly: false,
        lang: [ 'view', 'off', 'refresh']
-   },
-    magicType: {
-                show : true,
-                title : {
-                    line : 'Change to line Chart',
-                    bar : 'Change to Bar Chart',
-                    stack : 'Change to stack Chart',
-                    tiled : 'Change to tiled Chart'
-                },
-                type : ['line', 'bar', 'stack', 'tiled', 'pie']
-            }
+   }
   };
   myChart.setOption(option);
   </script>
